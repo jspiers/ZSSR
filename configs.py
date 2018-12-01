@@ -78,6 +78,12 @@ X2_GRADUAL_IDEAL_CONF.scale_factors = [[1.0, 1.5], [1.5, 1.0], [1.5, 1.5], [1.5,
 X2_GRADUAL_IDEAL_CONF.back_projection_iters = [6, 6, 8, 10, 10, 12]
 X2_GRADUAL_IDEAL_CONF.input_path = os.path.dirname(__file__) + '/set14'
 
+# Jeff X3
+JEFF_X3_GRADUAL_CONF = Config()
+JEFF_X3_GRADUAL_CONF.scale_factors = [[1.0, 1.75], [1.75, 1.0], [1.75, 1.75], [1.75, 3.0], [3.0, 1.75], [3.0, 3.0]]
+JEFF_X3_GRADUAL_CONF.back_projection_iters = [2, 2, 4, 6, 6, 8]
+
+
 # Applying a given kernel. Rotations are canceled sense kernel may be non-symmetric
 X2_GIVEN_KERNEL_CONF = Config()
 X2_GIVEN_KERNEL_CONF.output_flip = False
